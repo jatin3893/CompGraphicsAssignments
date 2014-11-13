@@ -1,0 +1,1 @@
+g++ barChart.cpp -o barChart -lGL -lglut

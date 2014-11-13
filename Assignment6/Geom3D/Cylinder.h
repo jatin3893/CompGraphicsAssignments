@@ -1,0 +1,14 @@
+class Cylinder{
+    public:
+    Cylinder(int radius, int height, int cx, int cy, int cz);
+    
+    static const int slices = 50;
+    static const int stacks = 1;
+    
+    double radius;
+    double height;
+    double center[3];
+    double color[3];
+    
+
+};

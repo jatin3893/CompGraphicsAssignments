@@ -1,0 +1,1 @@
+g++ main.cpp -o polygon -lGL -lglut

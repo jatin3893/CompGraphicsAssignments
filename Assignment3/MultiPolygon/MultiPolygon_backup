@@ -1,0 +1,45 @@
+int PolygonCount = 0;
+int MaxPolygonCount = 10;
+int MaxPointCount = 10;
+
+int[] PointCount = new int[MaxPolygonCount];
+int[][][] Points = new int[MaxPolygonCount][MaxPointCount][2];
+int[][] Color = new int[MaxPolygonCount][3];
+
+void mouseClicked()
+{
+  if (!Input_Ready)
+  {
+    if (mouseButton == LEFT)
+    {
+      if (PointCount[PolygonCount] < MaxPointCount)
+      {
+        Points[PolygonCount][PointCount[PolygonCount]][0] = mouseX / Scale;
+        Points[PolygonCount][PointCount[PolygonCount]][1] = mouseY / Scale;
+        PointCount[PolygonCount]++;
+        ColorCell(mouseX / Scale, mouseY/Scale, 0, PolygonCount * 30, PolygonCount * 30);
+      }
+    } else
+    {
+      if (PolygonCount < MaxPolygonCount)
+        PolygonCount++;
+      print(PolygonCount + "\n");
+    }
+  }
+}
+
+void keyPressed()
+{
+  if(!Input_Ready && key == '\n')
+  {
+    Input_Ready = true;
+  }
+  if(Input_Ready)
+  {
+    for(int i = 0; i < PolygonCount; i++)
+    {
+      
+    }
+  }
+}
+
