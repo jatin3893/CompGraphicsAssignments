@@ -6,26 +6,15 @@
 #
 #
 
-all: Main WindowManager Geometries
-	g++ -o A9 main.o WindowManager.o Object.o House.o Tree.o -lGL -lglut -lGLU
+all: Main WindowManager
+	g++ -o A11 main.o WindowManager.o -lGL -lglut -lGLU -lSOIL -std=c++11
     
 Main: main.cpp
 	g++ -c main.cpp
     
 WindowManager: WindowManager.cpp
 	g++ -c WindowManager.cpp
-    
-Geometries: Object House Tree
-
-Object: Object.cpp
-	g++ -c Object.cpp
-
-House: House.cpp
-	g++ -c House.cpp
-
-Tree: Tree.cpp
-	g++ -c Tree.cpp
 
 Clean:
-	rm -rf *.o A9
+	rm -rf *.o A11
 

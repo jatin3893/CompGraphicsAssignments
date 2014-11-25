@@ -7,7 +7,7 @@
 #
 
 all: Main WindowManager Geometries
-	g++ -o LabExam2 main.o WindowManager.o Object.o House.o Tree.o -lGL -lglut -lGLU -lSOIL
+	g++ -o A10 main.o WindowManager.o Object.o House.o Tree.o -lGL -lglut -lGLU -lSOIL
     
 Main: main.cpp
 	g++ -c main.cpp
@@ -27,5 +27,5 @@ Tree: Tree.cpp
 	g++ -c Tree.cpp
 
 Clean:
-	rm -rf *.o LabExam2
+	rm -rf *.o A10
 
