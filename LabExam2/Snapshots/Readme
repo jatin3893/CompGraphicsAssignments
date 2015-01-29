@@ -1,6 +1,0 @@
-// Project uses glm (from libglm) for vector calculations
-
-Camera Movements using keyboard keys (x, y, z) with/without shift
-Orbiting mouse by left click + drag
-Manually burst rockets using key '1'
-Manually burst fountains using key '2'
